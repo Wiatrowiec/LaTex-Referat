@@ -3,7 +3,6 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[a4paper,top=4cm,bottom=3cm,left=4cm,right=4cm,marginparwidth=1.95cm]{geometry}
-
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -18,7 +17,7 @@
 
 \begin{document}
 \maketitle 
-
+\tableofcontents % spis tresci
 \section{Rozdzial numerowany}
 \subparagraph{Podpunkt numerowany}
 
@@ -45,6 +44,7 @@
 \includegraphics[width=5cm, height=5cm]{obrazek1}
 \newpage % kolejna strona
 \section{Matematyka}
+\subparagraph{Alfabet grecki, funkcje trygonmetryczne}
 \begin{math}
 \alpha, \beta,  \gamma
 \cos (2/\alpha), \sin (45^\circ )
@@ -94,15 +94,75 @@ $ \lor $ & lor \\ % alternatywa
 \begin{math}
 \begin{bmatrix}
        \frac{3}{7} & \frac{1}{6} & \frac{1}{4} \\[0.3em]
-       \frac{5}{6} & 0           & \frac{5}{6} \\[0.3em]
+       \frac{5}{6} & 0           & \frac{5}{6} \\[0.3em]     
        0           & \frac{5}{21} & \frac{1}{6}
      \end{bmatrix} 
+           \qquad % Dzięki temu druga macierz zostala zapisana obok pierwszej a nie pod nią  
+           \begin{bmatrix}
+       1 & 5 & 14 \\[0.3em]
+      72 & 0  & 56 \\[0.3em]     
+       0 & 52 & 4
+     \end{bmatrix} 
 \end{math}
-
-
-
-
-
-
-
+\newline
+\subparagraph{Układy równań}
+$$
+y = \left\{ \begin{array}{ll}
+a & \textrm{gdy $d>c$}\\
+b+x & \textrm{gdy $d=c$}\\
+l & \textrm{gdy $ d < c $}
+\end{array} \right.
+$$
+$$
+y = \left\{ \begin{array}{ll}
+x+y^2 = 12 \\
+6x+4 = 15 \\
+y-x = 7
+\end{array} \right.
+$$
+\newline
+\newpage
+\section{Zadania}
+Zadania 1:\newline
+Za pomocą tabeli sprawdz wartość zdania logicznego dla każdej możliwej zmiennej: 
+\includegraphics{zadanie1}
+\newline
+Zadanie 2:
+Za pomocą funcji bmatrix wykonaj zadania: \newline
+a) A + B\newline
+b) A - B\newline
+\includegraphics{zadanie2}
+\newline
+\section{Inne różności}
+\subsection{Flushleft i Flushright, i center}
+\begin{flushleft}
+To jest tekst\\
+wyrównany do lewej.\\
+\end{flushleft}
+\begin{flushright}
+To jest tekst\\
+wyrównany do prawej.\\
+\end{flushright}
+\begin{center}
+To jest tekst\\
+wyrównany do środka.\\
+\end{center}
+\subparagraph{Dodatkowe znaki}
+\begin{tabular}{| r | r |}
+\hline
+Symbol & Kod \\
+\hline
+$ \neq $ & neg \\
+\hline
+$ \geq $ & geq \\
+\hline
+$ \leq $ & leg \\
+\hline
+$ \in $ & in \\
+\hline
+$ \exists $ & exists \\
+\hline
+$ \forall $ & forall \\
+\hline
+\end{tabular}
 \end{document}
